@@ -17,7 +17,7 @@
 4. Run [`hw0_python.ipynb`](hw0_python.ipynb) Jupyter notebook. You can do it:
 	* On your local machine using local Python and Jupyter installation, once you've cloned the repo locally
 	* On your local machine using Docker
-	* On [Binder](https://mybinder.org/v2/gh/DSApps-2022/HW0/master?filepath=hw0_python.ipynb)
+	* On [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/DSApps-2022/HW0/HEAD) or on [Google Colab](https://colab.research.google.com/)
 	* See details on running Python assignments in Playground mode [here](https://github.com/DSApps-2022/Class_Slides/blob/main/Apps_of_DS_HW.pdf).
 5. You're done. :nail_care:
 
