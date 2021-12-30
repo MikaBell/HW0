@@ -1,5 +1,5 @@
 ---
-title: 'DSApps 2021 @ TAU: Assignment 0'
+title: 'DSApps 2022 @ TAU: Assignment 0'
 author: "Giora Simchoni"
 date: "`r Sys.Date()`"
 output: 
@@ -207,7 +207,7 @@ bechdel_fil %>%
   ggplot(aes(clean_test, log(ROI), color = ROI_type)) +
   geom_boxplot() +
   facet_wrap(~ ROI_type) +
-  guides(color = FALSE)
+  guides(color = "none")
 ```
 
 
@@ -272,7 +272,7 @@ ggplot(bechdel_by_time, aes(x = period, y = n, fill = clean_test)) +
        subtitle = "How women are represented in movies",
        caption = "SOURCE: BECHDELTEST.COM",
        y = NULL, x = NULL) +
-  guides(fill = FALSE)
+  guides(fill = "none")
 ```
 
 A second attempt:
@@ -285,7 +285,7 @@ ggplot(bechdel_by_time, aes(x = period, fill = clean_test)) +
        subtitle = "How women are represented in movies",
        caption = "SOURCE: BECHDELTEST.COM",
        y = NULL, x = NULL) +
-  guides(fill = FALSE) +
+  guides(fill = "none") +
   scale_y_continuous(labels = c("0", "25", "50", "75", "100%"),
                      expand = c(0, 0),
                      sec.axis =
@@ -346,7 +346,7 @@ ggplot(data = NULL) +
        subtitle = "How women are represented in movies",
        caption = "SOURCE: BECHDELTEST.COM",
        y = NULL, x = NULL) +
-  guides(fill = FALSE) +
+  guides(fill = "none") +
   scale_y_continuous(labels = c("0", "25", "50", "75", "100%"),
                      expand = c(0, 0),
                      sec.axis =

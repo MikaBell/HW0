@@ -1,6 +1,6 @@
 <img src="images/DSApps_logo_small.jpg" align="right" />
 
-# DSApps @ TAU 2021: Assignment 0
+# DSApps @ TAU 2022: Assignment 0
 
 ### Welcome to Assignment 0!
 
@@ -13,12 +13,12 @@
 	* On your local machine using local R and RStudio installation, once you've cloned the repo locally
 	* On your local machine using Docker
 	* On [RStudio Cloud](https://rstudio.cloud/spaces/114909/project/2078698)
-	* See details on running R assignments in Playground mode [here](https://github.com/DSApps-2021/Class_Slides/blob/main/Apps_of_DS_HW.pdf).
+	* See details on running R assignments in Playground mode [here](https://github.com/DSApps-2022/Class_Slides/blob/main/Apps_of_DS_HW.pdf).
 4. Run [`hw0_python.ipynb`](hw0_python.ipynb) Jupyter notebook. You can do it:
 	* On your local machine using local Python and Jupyter installation, once you've cloned the repo locally
 	* On your local machine using Docker
-	* On [Binder](https://mybinder.org/v2/gh/DSApps-2020/HW0/master?filepath=hw0_python.ipynb)
-	* See details on running Python assignments in Playground mode [here](https://github.com/DSApps-2021/Class_Slides/blob/main/Apps_of_DS_HW.pdf).
+	* On [Binder](https://mybinder.org/v2/gh/DSApps-2022/HW0/master?filepath=hw0_python.ipynb)
+	* See details on running Python assignments in Playground mode [here](https://github.com/DSApps-2022/Class_Slides/blob/main/Apps_of_DS_HW.pdf).
 5. You're done. :nail_care:
 
 ###### Giora Simchoni
