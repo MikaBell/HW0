@@ -267,7 +267,7 @@ A first attempt to recreate the plot:
 
 ```{r}
 ggplot(bechdel_by_time, aes(x = period, y = n, fill = clean_test)) +
-  geom_bar(position="fill", stat="identity", color = "#f0f0f0", width = 0.98, size=1) +
+  geom_bar(position="fill", stat="identity", color = "#f0f0f0", width = 0.98, linewidth=1) +
   labs(title = "The Bechdel Test Over Time",
        subtitle = "How women are represented in movies",
        caption = "SOURCE: BECHDELTEST.COM",
@@ -280,7 +280,7 @@ A second attempt:
 ```{r}
 ggplot(bechdel_by_time, aes(x = period, fill = clean_test)) +
   geom_bar(aes(y = n), position="fill", stat="identity", color = "#f0f0f0",
-           width = 0.98, size=1) +
+           width = 0.98, linewidth=1) +
   labs(title = "The Bechdel Test Over Time",
        subtitle = "How women are represented in movies",
        caption = "SOURCE: BECHDELTEST.COM",
@@ -320,7 +320,7 @@ bechdel_summarized <- bechdel %>%
          )) %>%
   count(period, clean_test, binary2) %>%
   group_by(period, binary2) %>%
-  summarise(nn = sum(n)) %>%
+  summarise(nn = sum(n), .groups = 'drop') %>%
   group_by(period) %>%
   mutate(pct = nn/sum(nn)) %>%
   filter(binary2 == "PASS") %>%
@@ -339,7 +339,7 @@ bechdel_add_step <- tibble(period = c(bechdel_by_time$period, "another_level"),
 
 ggplot(data = NULL) +
   geom_bar(data = bechdel_by_time, aes(x = period, y = n, fill = clean_test),
-           position="fill", stat="identity", color = "#f0f0f0", width = 0.98, size=1) +
+           position="fill", stat="identity", color = "#f0f0f0", width = 0.98, linewidth=1) +
   geom_step(data = bechdel_add_step, aes(x = period, y = pct, group = 1),
             lwd = 2, position = position_nudge(-0.5)) +
   labs(title = "The Bechdel Test Over Time",
